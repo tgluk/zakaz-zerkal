@@ -1,0 +1,211 @@
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  // min-width: 70%;
+  color: #FFFFFF;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  // align-items: center;
+  justify-content: space-between;
+  padding: 73px 55px 0 45px;
+
+  &__adress-contain {
+    display: flex;
+    gap: 70px;
+  }
+
+  &__adress-text {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 10px 0;
+  }
+
+  &__adress-tel {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0;
+  }
+
+  &__social-box {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  padding-top: 200px;
+  padding-left: 45px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/assets/images/bg-main-block.jpg');
+  background-size: cover;
+
+  &__title-box {
+    margin-bottom: 100px;
+  }
+
+  &__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 70px;
+    letter-spacing: -0.02em;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    margin-top: 0;
+    width: 60%;
+  }
+
+  &__descriptions {
+    margin-bottom: 120px;
+    width: 30%;
+  }
+
+  &__description {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 92.4%;
+    /* or 18px */
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.75);
+
+    &_selected {
+      color: #fff;
+    }
+  }
+
+  &__buttons {
+    &.buttons {
+      display: flex;
+      margin-bottom: 80px;
+      gap: 25px;
+
+      .buttons__button-prime {
+        color: #fff;
+        border: 0;
+        background: #535699;
+        border-radius: 10px;
+        padding: 18px 30px;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        cursor: pointer;
+      }
+
+      .buttons__button {
+        color: rgba(255, 255, 255, 0.45);
+        border: 1px solid rgba(255, 255, 255, 0.45);
+        background: transparent;
+        border-radius: 10px;
+        padding: 18px 30px;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  // padding-top: 50px;
+  padding-left: 45px;
+  padding-right: 60px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('/assets/images/bg-products.jpg');
+  background-size: cover;
+  
+  &__title {
+    margin: 45px 0;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 67px;
+    letter-spacing: -0.02em;
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    // align-items: center;
+    justify-content: space-around;
+
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 72px;
+    width: 339px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 10px;
+
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+  &__buttons {
+    &.buttons {
+      display: flex;
+      margin: 50px 0;
+      gap: 25px;
+
+      .buttons__button-prime {
+        color: #fff;
+        border: 0;
+        background: #535699;
+        border-radius: 10px;
+        padding: 18px 30px;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        cursor: pointer;
+      }
+
+      .buttons__button {
+        color: rgba(255, 255, 255, 0.45);
+        border: 1px solid rgba(255, 255, 255, 0.45);
+        background: transparent;
+        border-radius: 10px;
+        padding: 10px 16px;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        cursor: pointer;
+      }
+    }
+  }
+}

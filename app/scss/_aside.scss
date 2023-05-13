@@ -1,0 +1,126 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  min-width: 21%;
+  @media (max-width: 1550px) {
+    min-width: 25%;
+  }
+  &__logo-box {
+    max-width: 300px;
+    padding: 30px;
+  }
+  &__logo {
+    width: 100%;
+  }
+
+  &__nav {
+    background: rgba(232, 232, 232, 0.6);
+
+    &-title {
+      padding-left: 2.6rem;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.875em;
+      line-height: 36px;
+      letter-spacing: 0.025em;
+      color: rgba(0, 0, 0, 0.85);
+    }
+
+    &-list {
+      list-style-type: none;
+      padding: 0 30px 0 0;
+
+      .sidebar__nav-item {
+        padding-left: 2.6rem;
+        background-image: url('/assets/images/dash.svg');
+        background-position: 0 0;
+        // background-size: 1.6rem 1.6rem;
+        background-size: 2rem 2rem;
+        background-repeat: no-repeat;
+        transition: all 0.1s ease-out;
+
+        &:hover {
+          padding-left: 2.8rem;
+          background-size: 2.6rem 2rem;
+        }
+        
+        .sidebar__nav-link {
+          display: inline-block;
+          text-decoration: none;
+          font-family: 'Inter';
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 30px;
+          color: #000000;
+          white-space: nowrap;
+          width: 100%;
+          transition: all 0.1s ease-out;
+
+          // @media (max-width: 1750px) {
+          //   font-size: 22px;
+          // }
+          @media (max-width: 1360px) {
+            font-size: 20px;
+          }
+          &:hover {
+            font-size: 21px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+
+  }
+}
+
+.news-box {
+  &__title {
+    padding-left: 2.6rem;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.85);
+  }
+
+  &__list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  &__item {
+    padding-left: 2.6rem;
+    transition: all 0.1s ease-out;
+
+    &:hover {
+      background-image: url('/assets/images/dash.svg');
+      background-position: 0 0;
+      // background-size: 1.6rem 1.6rem;
+      background-size: 2rem 2rem;
+      background-repeat: no-repeat;
+      padding-left: 3rem;
+      letter-spacing: 0;
+      // background-size: 2.6rem 2rem;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.75);
+    transition: all 0.1s ease-out;
+    white-space: nowrap;
+    &:hover {
+      font-size: 24px;
+      line-height: 29px; 
+      color: #000000;
+    }
+  }
+}
