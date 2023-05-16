@@ -4,15 +4,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="icon" href="/assets/images/favicon.png">
+  <link rel="icon" href="./assets/images/favicon.png">
   <title>Зеркальная мастерская</title>
 </head>
 </head>
-<body>
+<body class="body">
   <aside class="sidebar">
     <div class="sidebar__logo-box">
-      <img src="./assets/images/logo1.png" alt="ТК Добромиг">
+      <img class="sidebar__logo" src="./assets/images/logo1.png" alt="Логотип ТК Добромиг">
     </div>
     <nav class="sidebar__nav">
       <h3 class="sidebar__nav-title">КАТАЛОГ</h3>
@@ -39,7 +44,7 @@
           <a class="sidebar__nav-link" href="#">Зеркальная плитка</a>
         </li>
         <li class="sidebar__nav-item">
-          <a class="sidebar__nav-link" href="#">Заказ стёкл</a>
+          <a class="sidebar__nav-link" href="#">Заказ стёкол</a>
         </li>
         <li class="sidebar__nav-item">
           <a class="sidebar__nav-link" href="#">Зеркала</a>
@@ -52,18 +57,148 @@
     <div class="news-box">
       <h4 class="news-box__title">Полезные статьи</h4>
       <ul class="news-box__list">
-        <li class="news-box__item"><a href="#" class="newms-box__link">Декоративные зеркала</a></li>
-        <li class="news-box__item"><a href="#" class="newms-box__link">Триплекс</a></li>
-        <li class="news-box__item"><a href="#" class="newms-box__link">Пескоструйная обработка</a></li>
-        <li class="news-box__item"><a href="#" class="newms-box__link">Фьюзинг</a></li>
-        <li class="news-box__item"><a href="#" class="newms-box__link">Плёночный витраж</a></li>
-        <li class="news-box__item"><a href="#" class="newms-box__link">Узорчатое стекло</a></li>
-        <li class="news-box__item"><a href="#" class="newms-box__link">Художественные витражи</a></li>
-        <li class="news-box__item"><a href="#" class="newms-box__link">Стеклянная мозайка</a></li>
-        <li class="news-box__item"><a href="#" class="newms-box__link">Пескоструйная обработка</a></li>
+        <li class="news-box__item"><a href="#" class="news-box__link">Декоративные зеркала</a></li>
+        <li class="news-box__item"><a href="#" class="news-box__link">Триплекс</a></li>
+        <li class="news-box__item"><a href="#" class="news-box__link">Пескоструйная обработка</a></li>
+        <li class="news-box__item"><a href="#" class="news-box__link">Фьюзинг</a></li>
+        <li class="news-box__item"><a href="#" class="news-box__link">Плёночный витраж</a></li>
+        <li class="news-box__item"><a href="#" class="news-box__link">Узорчатое стекло</a></li>
+        <li class="news-box__item"><a href="#" class="news-box__link">Художественные витражи</a></li>
+        <li class="news-box__item"><a href="#" class="news-box__link">Стеклянная мозайка</a></li>
+        <li class="news-box__item"><a href="#" class="news-box__link">Пескоструйная обработка</a></li>
       </ul>
     </div>
   </aside>
+  <main class="main">
+    <header class="header">
+      <div class="header__logo-box">
+        <img class="header__logo" src="./assets/images/logo1.png" alt="Логотип ТК Добромиг">
+      </div>
+      <div class="header__adress-box">
+        <div class="header__adress-contain">
+          <p class="header__adress-text">Работаем с 9:00 до 21:00</p>
+          <p class="header__adress-text">г. Москва, ул.Пришвина д.26</p>
+        </div>
+        <a class="header__adress-tel" href="tel:+74959717399">8(495)971-73-99</a>
+      </div>
+      <div class="header__social-box">
+        <a class="header__social-link" href="#"><img class="header__social-img" src="./assets/images/icons/mail-ico.png" alt="email"></a>
+        <a class="header__social-link" href="#"><img class="header__social-img" src="./assets/images/icons/whatsapp-ico.png" alt="whatsapp"></a>
+        <a class="header__social-link" href="#"><img class="header__social-img" src="./assets/images/icons/telegram-ico.png" alt="telegram"></a>
+      </div>
+    </header>
+    <section class="about">
+      <div class="about__title-box">
+        <h1 class="about__title"><span class="about__title-right">Зеркальная </span> <span class="about__title-left">мастерская</span></h1>
+        <p class="about__subtitle">изготовит стеклянные полки по Вашим эскизам!</p>
+      </div>
+      <div class="about__descriptions">
+        <p class="about__description">Зеркальная мастерская осуществляет розничной продажу зеркал и стекла, продажа зеркал <span class="about__description_selected">отечественного и импортного</span> производства а так же изделий из них. Наша зеркальная мастерская выполнит изготовление изделий в соответствии с Вашими <span class="about__description_selected">пожеланиями, чертежами и эскизами</span>, соблюдая в точности указанные размеры.</p>
+        <p class="about__description">Многие виды выполняемых нами работ не указаны на сайте, <span class="about__description_selected">звоните нам</span>, с любыми <span class="about__description_selected">вопросами</span> касающимися изделий из стекла и зеркал, наши менеджеры с удовольствием <span class="about__description_selected">Вам ответят!</span></p>
+      </div>
+      <div class="about__buttons buttons">
+        <button class="buttons__button-prime">Заказать звонок</button>
+        <button class="buttons__button">Отправить на расчёт</button>
+      </div>
+    </section>
+    <nav class="nav">
+      <h3 class="nav-title">КАТАЛОГ</h3>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Стеклянные столы</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Стеклянные полки</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Стеклянные двери</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Стеклянные перегородки</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Стеклянные витрины</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Зеркальные двери</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Зеркальная плитка</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Заказ стёкол</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Зеркала</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ремонт стекла</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="services">
+      <h2 class="services__title">Вы можете заказать у нас:</h2>
+      <div class="services__links">
+        <a href="#" class="services__link">Полки стеклянные для ванной</a>
+        <a href="#" class="services__link">Настенные стеклянные полки</a>
+        <a href="#" class="services__link">Полки стеклянные для ванной</a>
+        <a href="#" class="services__link">Стеклянные угловые полки</a>
+        <a href="#" class="services__link">Стеклянные полки в офис</a>
+        <a href="#" class="services__link">Стеклянные полки с подсветкой</a>
+        <a href="#" class="services__link">Стеклянные навесные полки</a>
+        <a href="#" class="services__link">Стеклянные полки на кухню</a>
+        <a href="#" class="services__link">Полки стеклянные для ванной</a>
+        <a href="#" class="services__link">Настенные стеклянные полки</a>
+        <a href="#" class="services__link">Полки стеклянные для ванной</a>
+        <a href="#" class="services__link">Стеклянные угловые полки</a>
+      </div>
+      <div class="services__buttons buttons">
+        <button class="buttons__button-prime">Заказать звонок</button>
+        <button class="buttons__button">Отправить на расчёт</button>
+      </div>
+    </section>
+    <section class="news">
+      <h4 class="news__title">Полезные статьи</h4>
+      <ul class="news__list">
+        <li class="news__item"><a href="#" class="news__link">Декоративные зеркала</a></li>
+        <li class="news__item"><a href="#" class="news__link">Триплекс</a></li>
+        <li class="news__item"><a href="#" class="news__link">Пескоструйная обработка</a></li>
+        <li class="news__item"><a href="#" class="news__link">Фьюзинг</a></li>
+        <li class="news__item"><a href="#" class="news__link">Плёночный витраж</a></li>
+        <li class="news__item"><a href="#" class="news__link">Узорчатое стекло</a></li>
+        <li class="news__item"><a href="#" class="news__link">Художественные витражи</a></li>
+        <li class="news__item"><a href="#" class="news__link">Стеклянная мозайка</a></li>
+        <li class="news__item"><a href="#" class="news__link">Пескоструйная обработка</a></li>
+      </ul>
+    </section>
+    <footer class="footer">
+      <section class="footer__main">
+        <div class="footer__logo-box">
+          <img class="footer__logo" src="./assets/images/logo1.png" alt="Логотип ТК Добромиг">
+        </div>
+        <div class="footer__adress-box">
+          <p class="footer__adress-text">Работаем с 9:00 до 21:00</p>
+          <p class="footer__adress-text">г. Москва, ул.Пришвина, д.26</p>
+        </div>
+        <div class="footer__contacts contacts">
+          <a class="contacts__tel" href="tel:+74959717399">8(495)971-73-99</a>
+          <a class="contacts__mail" href="mailto:dobromig-tk@yandex.ru">E-mail: dobromig-tk@yandex.ru</a>
+          <div class="contacts__social-box">
+            <a class="contacts__social-link" href="#"><img class="contacts__social-img" src="./assets/images/icons/mail-ico.png" alt="email"></a>
+            <a class="contacts__social-link" href="#"><img class="contacts__social-img" src="./assets/images/icons/whatsapp-ico.png" alt="email"></a>
+            <a class="contacts__social-link" href="#"><img class="contacts__social-img" src="./assets/images/icons/telegram-ico.png" alt="email"></a>
+            <a class="contacts__social-link" href="#"><img class="contacts__social-img" src="./assets/images/icons/facebook-ico.png" alt="email"></a>
+            <a class="contacts__social-link" href="#"><img class="contacts__social-img" src="./assets/images/icons/vk-ico.png" alt="email"></a>
+            <a class="contacts__social-link" href="#"><img class="contacts__social-img" src="./assets/images/icons/youtube-ico.png" alt="email"></a>
+          </div>
+        </div>
+      </section>
+      <section class="footer__policy-box">
+        <p class="footer__policy">© Все права защищены</p>
+        <a class="footer__policy footer__policy-link" href="https://nikitinlaw.com/policy">Политика конфиденциальности</a>
+      </section>
+    </section>
+  </main>
   <script src="js/main.min.js"></script>
 </body>
 </html>
