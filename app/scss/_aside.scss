@@ -139,18 +139,19 @@
     text-decoration: none;
     font-family: 'Inter';
     font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 20px;
     color: rgba(0, 0, 0, 0.75);
     transition: all 0.1s ease-out;
     white-space: nowrap;
 
     @media (max-width: 1280px) {
       font-size: 15px;
+      line-height: normal;
     }
     &:hover {
-      font-size: 29px;
-      line-height: 29px; 
+      font-size: 20px;
+      // line-height: 29px; 
       color: #000000;
       @media (max-width: 1280px) {
         font-size: 16px;
