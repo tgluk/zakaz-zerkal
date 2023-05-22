@@ -137,9 +137,9 @@
         <a class="header__adress-tel" href="tel:+74959717399">8(495)971-73-99</a>
       </div>
       <div class="header__social-box">
-        <a class="header__social-link" href="#"><img class="header__social-img" src="./assets/images/icons/mail-ico.png" alt="email"></a>
-        <a class="header__social-link" href="#"><img class="header__social-img" src="./assets/images/icons/whatsapp-ico.png" alt="whatsapp"></a>
-        <a class="header__social-link" href="#"><img class="header__social-img" src="./assets/images/icons/telegram-ico.png" alt="telegram"></a>
+        <a class="header__social-link" href="mailto:dobromig-tk@yandex.ru"><img class="header__social-img" src="./assets/images/icons/mail-ico.png" alt="email"></a>
+        <a class="header__social-link" href="https://wa.me/+79153291447"><img class="header__social-img" src="./assets/images/icons/whatsapp-ico.png" alt="whatsapp"></a>
+        <a class="header__social-link" href="https://t.me/+79153291447"><img class="header__social-img" src="./assets/images/icons/telegram-ico.png" alt="telegram"></a>
       </div>
     </header>
     <section class="about">
@@ -279,12 +279,9 @@
           <a class="contacts__tel" href="tel:+74959717399">8(495)971-73-99</a>
           <a class="contacts__mail" href="mailto:dobromig-tk@yandex.ru">E-mail: dobromig-tk@yandex.ru</a>
           <div class="contacts__social-box">
-            <a class="contacts__social-link" href="#"><img class="contacts__social-img" src="./assets/images/icons/mail-ico.png" alt="email"></a>
-            <a class="contacts__social-link" href="#"><img class="contacts__social-img" src="./assets/images/icons/whatsapp-ico.png" alt="email"></a>
-            <a class="contacts__social-link" href="#"><img class="contacts__social-img" src="./assets/images/icons/telegram-ico.png" alt="email"></a>
-            <a class="contacts__social-link" href="#"><img class="contacts__social-img" src="./assets/images/icons/facebook-ico.png" alt="email"></a>
-            <a class="contacts__social-link" href="#"><img class="contacts__social-img" src="./assets/images/icons/vk-ico.png" alt="email"></a>
-            <a class="contacts__social-link" href="#"><img class="contacts__social-img" src="./assets/images/icons/youtube-ico.png" alt="email"></a>
+            <a class="header__social-link" href="mailto:dobromig-tk@yandex.ru"><img class="header__social-img" src="./assets/images/icons/mail-ico.png" alt="email"></a>
+        <a class="header__social-link" href="https://wa.me/+79153291447"><img class="header__social-img" src="./assets/images/icons/whatsapp-ico.png" alt="whatsapp"></a>
+        <a class="header__social-link" href="https://t.me/+79153291447"><img class="header__social-img" src="./assets/images/icons/telegram-ico.png" alt="telegram"></a>
           </div>
         </div>
       </section>
@@ -294,14 +291,27 @@
       </section>
     </section>
   </main>
+    <div class="modal-wrapper">
+      <form class="modal" name="modal" enctype="multipart/form-data" method="post" id="form" onsubmit="submitForm(event)" action="mailer/send.php">
+        <h2 class="modal__title">Написать нам</h2>
+        <input type="text"
+               class="modal__input"
+               placeholder="Имя"
+               name="name"
+               required
+        />
+        <input type="text"
+               class="modal__input"
+               placeholder="E-mail или Телефон"
+               name="contacts"
+        />
+        <p>Прикрепить файлы</p>
+        <input type="file" name="myfile[]" multiple id="myfile">
+        <div class="g-recaptcha" data-sitekey="6LfUqCAmAAAAABDDJMTjMt_BLwiTDGhxfPjP4WiH"></div>
+        <input class="sing-in_modal" type="submit" name="submit" value="Отправить" />
+      </form>
+    </div>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src="js/main.min.js"></script>
-  <!-- begin of Top100 code -->
-  <script id="top100Counter" type="text/javascript" src="http://counter.rambler.ru/top100.jcn?2258087"></script>
-  <noscript>
-  <a href="http://top100.rambler.ru/navi/2258087/">
-  <img src="http://counter.rambler.ru/top100.cnt?2258087" alt="Rambler's Top100" border="0" />
-  </a>
-  </noscript>
-  <!-- end of Top100 code -->
 </body>
-</html>
+</html> 
